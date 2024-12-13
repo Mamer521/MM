@@ -1,4 +1,4 @@
-### 数据倾斜问题
+![fd93954af55f11cee3e204ac5971c5f0](https://github.com/user-attachments/assets/db5f4bd3-56e7-4cee-98db-aa184f5e3561)![image](https://github.com/user-attachments/assets/5a773088-58fc-4d3b-8344-e124129d1289)### 数据倾斜问题
 
 ​	例子:如果现在有两个人数两个班级多少人,共有30人,一个班级是3个人,另一个班级是27人,那么这种严重的情况就发生了严重的倾斜;
 
@@ -42,5 +42,12 @@ group by re;
 ```增大map和reduce的数量进行优化
 **set mapred.map.tasks=20;**
 **set mapred.min.split.size=100000000**;
-```
 
+**flinkcdc读取依赖问题**:
+    flinkcdc的版本不同情况,因为版本不同,所以导入依赖的要自己导入即可
+导包之前:
+import com.alibaba.ververica.cdc.debezium.StringDebeziumDeserializationSchema;
+import com.alibaba.ververica.cdc.connectors.mysql.MySQLSource;
+解决后的包:
+import com.ververica.cdc.debezium.StringDebeziumDeserializationSchema;
+import com.ververica.cdc.connectors.mysql.MySQLSource;
