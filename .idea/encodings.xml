@@ -3,6 +3,8 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/gmall_api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/gmall_api/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/realtime-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/realtime-common/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/realtime-dim/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/realtime-dim/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/realtime-dwd/realtime-dwd-base-db/src/main/java" charset="UTF-8" />

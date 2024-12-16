@@ -8,11 +8,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="realtime-dim" />
+        <module name="realtime-common" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="gmall_api" target="1.8" />
-      <module name="realtime-common" target="1.8" />
       <module name="realtime-dwd-base-db" target="1.8" />
       <module name="realtime-dwd-base-log" target="1.8" />
       <module name="realtime-dwd-interaction-comment-info" target="1.8" />
