@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/gmall_api/pom.xml" />
+        <option value="$PROJECT_DIR$/realtime-dwd/realtime-dwd-base-db/pom.xml" />
+        <option value="$PROJECT_DIR$/realtime-dwd/realtime-dwd-base-log/pom.xml" />
+        <option value="$PROJECT_DIR$/realtime-dwd/realtime-dwd-interaction-comment-info/pom.xml" />
+        <option value="$PROJECT_DIR$/realtime-dwd/realtime-dwd-trade-cart-add/pom.xml" />
+        <option value="$PROJECT_DIR$/realtime-dwd/realtime-dwd-trade-order-cancel-detail/pom.xml" />
+        <option value="$PROJECT_DIR$/realtime-dwd/realtime-dwd-trade-order-detail/pom.xml" />
+        <option value="$PROJECT_DIR$/realtime-dwd/realtime-dwd-trade-order-pay-suc-detail/pom.xml" />
+        <option value="$PROJECT_DIR$/realtime-dwd/realtime-dwd-trade-order-refund/pom.xml" />
+        <option value="$PROJECT_DIR$/realtime-dwd/realtime-dwd-trade-refund-pay-suc-detail/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
