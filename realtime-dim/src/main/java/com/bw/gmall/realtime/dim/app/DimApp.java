@@ -54,11 +54,13 @@ public class DimApp extends BaseApp {
         // 2.通过CDC读取配置表,并行度只能是1
         DataStreamSource<String> processStream = env.fromSource(FlinkSourceUtil.getMysqlSource(Constant.PROCESS_DATABASE, Constant.PROCESS_DIM_TABLE_NAME), WatermarkStrategy.noWatermarks(), "cdc_stream").setParallelism(1);
         // 3.在Hbase建表
+        processStream.print();
         SingleOutputStreamOperator<TableProcessDim> createTableStream = createTable(processStream);
         // 4.主流数据和广播进行连接处理
         MapStateDescriptor<String,TableProcessDim> mapDescriptor = new MapStateDescriptor<String,TableProcessDim>("broadcast_state",String.class,TableProcessDim.class);
         BroadcastStream<TableProcessDim> broadcastStream = createTableStream.broadcast(mapDescriptor);
         SingleOutputStreamOperator<Tuple2<JSONObject, TableProcessDim>> processBroadCastStream = etlStream.connect(broadcastStream).process(new DimProcessFunction(mapDescriptor));
+//        processBroadCastStream.print();
         // 5.过滤字段
         SingleOutputStreamOperator<Tuple2<JSONObject, TableProcessDim>> filterStream = getFilterStream(processBroadCastStream);
         // 6.写入Hbase

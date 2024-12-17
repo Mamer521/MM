@@ -90,8 +90,8 @@ public class DwsTradeCartAddUuWindow extends BaseApp {
                     }
                 }
             )
-            .map(new DorisMapFunction<>()).print();
-//            .sinkTo(FlinkSinkUtil.getDorisSink(Constant.DWS_TRADE_CART_ADD_UU_WINDOW));
+            .map(new DorisMapFunction<>())
+            .sinkTo(FlinkSinkUtil.getDorisSink(Constant.DWS_TRADE_CART_ADD_UU_WINDOW));
 
 
     }
