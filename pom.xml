@@ -15,6 +15,7 @@
         <module>realtime-dws</module>
         <module>realtime-common</module>
         <module>gmall_api</module>
+        <module>gmall_api</module>
     </modules>
 
     <properties>
